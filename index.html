@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>просто сайтик</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <h1 id="title">
+        спасибо что посетила мой сайт
+    </h1>
+
+    <p id="text">
+        всё что от тебя требуется это тыкать на кнопочки которые тебе понравятся, согласна?
+    </p>
+
+
+    <!-- НАЧАЛЬНЫЕ КНОПКИ -->
+
+    <button id="yesT">
+        хорошо
+    </button>
+
+    <button id="noT">
+        откажусь
+    </button>
+
+
+    <!-- ВВОД ИМЕНИ -->
+
+    <input
+        id="nameInput"
+        type="text"
+        placeholder="тут должно быть твоё имя"
+        style="display: none;"
+    >
+
+    <button id="nameOk" style="display: none;">
+        ок
+    </button>
+
+    <button id="nameSkip" style="display: none;">
+        пока что не хочу говорить
+    </button>
+
+
+    <!-- ПРОДОЛЖИТЬ ПОСЛЕ ИМЕНИ -->
+
+    <button id="continueButton" style="display: none;">
+        продолжим
+    </button>
+
+
+    <!-- ПРОДОЛЖИТЬ МЕЖДУ ВОПРОСАМИ -->
+
+    <button id="questionContinue" style="display: none;">
+        продолжить
+    </button>
+
+
+    <!-- КНОПКИ ОТВЕТОВ -->
+
+    <div id="questionButtons" style="display: none;">
+
+        <button id="answer1"></button>
+
+        <button id="answer2"></button>
+
+    </div>
+
+
+    <!-- TELEGRAM -->
+
+    <div id="telegramBlock" style="display: none;">
+
+        <p>
+            мой тг:
+        </p>
+
+        <p id="telegramUsername">
+            @sqrtabsc
+        </p>
+
+        <a
+            id="telegramButton"
+            href="https://t.me/sqrtabsc"
+            target="_blank"
+        >
+            перейти
+        </a>
+
+    </div>
+
+
+    <!-- ЗАТЕМНЕНИЕ -->
+
+    <div id="overlay"></div>
+
+
+    <!-- ОКНО ОШИБКИ -->
+
+    <div id="errorPopup" style="display: none;">
+
+        <button id="popupClose">
+            ×
+        </button>
+
+        <h2>
+            ошибка
+        </h2>
+
+        <p id="popupText">
+            мне кажется ты промазала
+        </p>
+
+        <button id="popupYes">
+            хорошо
+        </button>
+
+        <button id="popupNo">
+            нет
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
